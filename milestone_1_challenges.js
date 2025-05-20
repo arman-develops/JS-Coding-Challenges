@@ -107,7 +107,26 @@ function fizzBuzzCheck(number) {
     console.log(output);
 }
 
-fizzBuzzCheck(3);
-fizzBuzzCheck(10);
-fizzBuzzCheck(15);
-fizzBuzzCheck(7);
+// fizzBuzzCheck(3);
+// fizzBuzzCheck(10);
+// fizzBuzzCheck(15);
+// fizzBuzzCheck(7);
+
+//challenge 10: Perimeter 2
+function perimeter (i, number) {
+    let perimeter
+    switch(i) {
+        case "s":
+            perimeter = 4 * number;
+            break;
+        case "c":
+            perimeter = 6.28 * number;
+            break;
+        default:
+            return;    
+    }
+    return perimeter;
+}
+
+console.log(perimeter("s", 7));
+console.log(perimeter("c", 4));
