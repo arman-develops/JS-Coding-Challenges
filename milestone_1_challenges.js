@@ -52,6 +52,24 @@ function findLargest(a, b, c) {
         return c;
     }
 }
-console.log(findLargest(5, 9, 3)); //9
-console.log(findLargest(10, 10, 10)); //10
-console.log(findLargest(-1, -5, -3)); //-1
+// console.log(findLargest(5, 9, 3)); //9
+// console.log(findLargest(10, 10, 10)); //10
+// console.log(findLargest(-1, -5, -3)); //-1
+
+//challenge 7: BMI Calculator
+function calculateBMI(weight, height) {
+    let BMI = weight / (height * height);
+    let category = "";
+    if(BMI < 18.5) {
+        category = "Underweight";
+    }else if (BMI > 18.5 && BMI < 24.9) {
+        category = "Normal weight";
+    }else if(BMI > 25 && BMI < 29.9) {
+        category = "Overweight";
+    }else {
+        category = "Obese";
+    }
+    console.log(`Your BMI is ${BMI} - ${category}`);
+}
+// calculateBMI(68, 1.75); //Your BMI is 22.2 - Normal weight
+// calculateBMI(85, 1.8); //Your BMI is 26.2 - Normal weight
