@@ -39,5 +39,19 @@ function canDrive(name, age) {
         console.log(`${name} is not old enough to drive yet`);
     }
 }
-canDrive("Jane", 22); //Jane is old enough to drive
-canDrive("June", 12); //June is not old enough to drive yet
+// canDrive("Jane", 22); //Jane is old enough to drive
+// canDrive("June", 12); //June is not old enough to drive yet
+
+//challenge 6: Largest number
+function findLargest(a, b, c) {
+    if(a > b && a > c) {
+        return a;
+    }else if(b > a && b > c) {
+        return b;
+    } else {
+        return c;
+    }
+}
+console.log(findLargest(5, 9, 3)); //9
+console.log(findLargest(10, 10, 10)); //10
+console.log(findLargest(-1, -5, -3)); //-1
