@@ -128,5 +128,19 @@ function perimeter (i, number) {
     return perimeter;
 }
 
-console.log(perimeter("s", 7));
-console.log(perimeter("c", 4));
+// console.log(perimeter("s", 7));
+// console.log(perimeter("c", 4));
+
+// Challenge 11: Sum Of Even Numbers
+function sumEvenNumbers(n) {
+    let sum = 0;
+    for(let i = 0; i <= n; i++) {
+        if(i % 2 == 0) {
+            sum = sum + i;
+        }
+    }
+    return sum;
+}
+// console.log(sumEvenNumbers(6));
+// console.log(sumEvenNumbers(10));
+// console.log(sumEvenNumbers(5));
