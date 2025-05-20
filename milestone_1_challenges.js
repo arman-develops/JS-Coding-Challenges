@@ -73,3 +73,20 @@ function calculateBMI(weight, height) {
 }
 // calculateBMI(68, 1.75); //Your BMI is 22.2 - Normal weight
 // calculateBMI(85, 1.8); //Your BMI is 26.2 - Normal weight
+
+//Challenge 8: Greetings based on time
+function greetUser(name, hour) {
+    let greeting = "";
+    if(hour <= 11 && hour >= 5) {
+        greeting = `Good morning, ${name}`;
+    }else if(hour >= 12 && hour <= 17) {
+        greeting = `Good afternoon, ${name}`;
+    }else  if(hour >= 18 && hour <= 21) {
+        greeting = `Good evening, ${name}`;
+    }else if(hour <= 4 || hour >= 22) {
+        greeting = `Good night, ${name}`;
+    }
+    console.log(greeting);
+}
+
+greetUser("Alice", 2);
