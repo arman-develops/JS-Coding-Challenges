@@ -154,8 +154,26 @@ function powerUp(num, times) {
     return result;
 }
 
-console.log(powerUp(2, 3));
-console.log(powerUp(0));
-console.log(powerUp(5, 0));
-console.log(powerUp(3, 4));
+// console.log(powerUp(2, 3));
+// console.log(powerUp(0));
+// console.log(powerUp(5, 0));
+// console.log(powerUp(3, 4));
+
+//challenge 13: Factorial Calculator
+function factorial(n) {
+    if(n < 0) {
+        console.log("Non-negative numbers only");
+        return;
+    }
+    
+    if(n == 0 || n == 1) {
+        return 1;
+    }
+    
+    return n * factorial(n-1);
+}
+console.log(factorial(0));
+console.log(factorial(4));
+console.log(factorial(6));
+
 
