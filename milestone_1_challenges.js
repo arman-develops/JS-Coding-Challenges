@@ -2,7 +2,6 @@
 function addition (num1, num2) {
     return num1 + num2;
 }
-
 // console.log(addition(3, 5)); //8
 // console.log(addition(-6, 9)); //3
 
@@ -88,7 +87,6 @@ function greetUser(name, hour) {
     }
     console.log(greeting);
 }
-
 // greetUser("Alice", 2);
 
 //Challenge 9: FizzBuzz
@@ -106,7 +104,6 @@ function fizzBuzzCheck(number) {
     }
     console.log(output);
 }
-
 // fizzBuzzCheck(3);
 // fizzBuzzCheck(10);
 // fizzBuzzCheck(15);
@@ -127,7 +124,6 @@ function perimeter (i, number) {
     }
     return perimeter;
 }
-
 // console.log(perimeter("s", 7));
 // console.log(perimeter("c", 4));
 
@@ -153,7 +149,6 @@ function powerUp(num, times) {
     }
     return result;
 }
-
 // console.log(powerUp(2, 3));
 // console.log(powerUp(0));
 // console.log(powerUp(5, 0));
@@ -186,6 +181,19 @@ function sumMultiples(n, divisor) {
     }
     return sum
 }
-console.log(sumMultiples(10, 2));
-console.log(sumMultiples(15, 3));
-console.log(sumMultiples(7, 5));
+// console.log(sumMultiples(10, 2));
+// console.log(sumMultiples(15, 3));
+// console.log(sumMultiples(7, 5));
+
+// Challenge 15: Sum of digits
+function sumDigits(num) {
+    let sum = 0;
+    while(num > 0) {
+        sum = sum + (num % 10);
+        num = Math.floor(num / 10);
+    }
+    return sum;
+}
+// console.log(sumDigits(123));
+// console.log(sumDigits(4567));
+// console.log(sumDigits(0));
