@@ -93,21 +93,25 @@ function greetUser(name, hour) {
 function fizzBuzzCheck(number) {
     let output = "";
 
+    if(number % 3 === 0 && number % 5 === 0) {
+        return "FizzBuzz";
+    }
+
     if (number % 3 === 0) {
-        output += "Fizz";
+        return "Fizz";
     }
     if (number % 5 === 0) {
-        output += "Buzz";
+        return "Buzz";
     }
     if(output === "") {
-        output = number.toString();
+        return number.toString();
     }
-    console.log(output);
+    // console.log(output);
 }
-// fizzBuzzCheck(3);
-// fizzBuzzCheck(10);
-// fizzBuzzCheck(15);
-// fizzBuzzCheck(7);
+// console.log(fizzBuzzCheck(3));
+// console.log(fizzBuzzCheck(10));
+// console.log(fizzBuzzCheck(15));
+// console.log(fizzBuzzCheck(7));
 
 //challenge 10: Perimeter 2
 function perimeter (i, number) {
