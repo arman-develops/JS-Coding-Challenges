@@ -84,3 +84,17 @@ function sumEvenNumbers(numArray) {
     return sum;
 }
 // console.log(sumEvenNumbers([1, 2, 3, 4, 5, 6]));
+
+// Challenge 8: Difference between the sum of even and odd numbers
+function differenceEvenOdd(numArray) {
+    let evenTotal = 0, oddTotal = 0;
+    for(let i = 0; i < numArray.length; i++) {
+        if(numArray[i] % 2 == 0) {
+            evenTotal += numArray[i];
+        }else {
+            oddTotal += numArray[i];
+        }
+    }
+    return evenTotal - oddTotal;
+}
+// console.log(differenceEvenOdd([1, 2, 3, 4, 5, 6]));
