@@ -98,3 +98,15 @@ function differenceEvenOdd(numArray) {
     return evenTotal - oddTotal;
 }
 // console.log(differenceEvenOdd([1, 2, 3, 4, 5, 6]));
+
+// Challenge 9: Count Truthy
+function countTruthy(obj) {
+    let count = 0
+    for(let i = 0; i < Object.values(obj).length; i++) {
+        if(Object.values(obj)[i]) {
+            count += 1
+        }
+    }
+    return count;
+}
+console.log(countTruthy({ a: 0, b: "hello", c: false, d: 42, e: null }));
