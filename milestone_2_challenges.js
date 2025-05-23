@@ -220,5 +220,5 @@ function mostFrequent(arr) {
     }
     return mostFrequentValue;
 }
-console.log(mostFrequent([1, 2, 3, 2, 4, 1, 2]));
-console.log(mostFrequent(["apple", "banana", "apple", "orange", "banana", "apple"]));
+// console.log(mostFrequent([1, 2, 3, 2, 4, 1, 2]));
+// console.log(mostFrequent(["apple", "banana", "apple", "orange", "banana", "apple"]));
