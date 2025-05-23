@@ -138,3 +138,16 @@ function linearSearch(arr, val) {
 }
 // console.log(linearSearch([5, 3, 7, 1, 4], 7));
 // console.log(linearSearch([5, 3, 7, 1, 4], 10));
+
+// Challenge 12: Reverse Linear Search
+function reverseLinearSearch(arr, val) {
+    for(let i = arr.length -1 ; i >= 0; i--) {
+        if(arr[i] === val) {
+            return i;
+        }
+    }
+    return -1
+}
+// console.log(reverseLinearSearch([5, 3, 7, 1, 4, 7], 7));
+// console.log(reverseLinearSearch([5, 3, 7, 1, 4], 10));
+
