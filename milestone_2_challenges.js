@@ -134,7 +134,7 @@ function linearSearch(arr, val) {
             return i;
         }
     }
-    return -1
+    return -1;
 }
 // console.log(linearSearch([5, 3, 7, 1, 4], 7));
 // console.log(linearSearch([5, 3, 7, 1, 4], 10));
@@ -146,8 +146,20 @@ function reverseLinearSearch(arr, val) {
             return i;
         }
     }
-    return -1
+    return -1;
 }
 // console.log(reverseLinearSearch([5, 3, 7, 1, 4, 7], 7));
 // console.log(reverseLinearSearch([5, 3, 7, 1, 4], 10));
 
+// Challenge 13: Linear Search All Indices
+function linearSearchAll(arr, val) {
+    let indices = [];
+    for(let i = 0; i < arr.length; i++) {
+        if(arr[i] === val) {
+            indices.push(i);
+        }
+    }
+    return indices;
+}
+// console.log(linearSearchAll([5, 3, 7, 1, 4, 7], 7));
+// console.log(linearSearchAll([5, 3, 7, 1, 4], 10));
