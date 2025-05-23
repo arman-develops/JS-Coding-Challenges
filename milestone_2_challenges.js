@@ -167,9 +167,34 @@ function linearSearchAll(arr, val) {
 // Challenge 14: Count Occurrences
 function countOccurrences(arr) {
     let obj = {};
-    for(item of arr) {
-        obj[item] = (obj[item] || 0) + 1;
+    for(let i = 0; i < arr.length; i++) {
+        let item  = arr[i];
+
+        if(obj[item] === undefined) {
+            obj[item] = 1;
+        } else {
+            obj[item] += 1;
+        }
     }
     return obj;
 }
 // console.log(countOccurrences(["apple", "banana", "apple", "orange", "banana", "apple"]));
+
+// Challenge 15: Remove Duplicates
+function removeDuplicates(arr) {
+    let newArr = [];
+    for(let i = 0; i < arr.length; i++) {
+        let isDuplicated = false;
+        for(let j = 0; j < newArr.length; j++) {
+            if(arr[i] === newArr[j]) {
+                isDuplicated = true;
+                break;
+            }
+        }
+        if(!isDuplicated) {
+            newArr.push(arr[i]);
+        }
+    }
+    return newArr;
+}
+// console.log(removeDuplicates([1, 2, 3, 2, 4, 1, 5]));
